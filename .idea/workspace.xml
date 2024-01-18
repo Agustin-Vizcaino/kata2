@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="Initial commit, created city class, added dataset from https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&amp;sort=name">
+    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="Implemented generic Loader interface, created CSVLoader class">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSVLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CSVLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -56,7 +62,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705587876526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Progress on city class, added initialization mechanism">
+      <option name="closed" value="true" />
+      <created>1705589467681</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705589467681</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Finished toString, first iteration of City class finished">
+      <option name="closed" value="true" />
+      <created>1705589615257</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705589615257</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Implemented generic Loader interface, created CSVLoader class">
+      <option name="closed" value="true" />
+      <created>1705595075500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705595075500</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -64,7 +94,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -72,6 +114,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit, created city class, added dataset from https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&amp;sort=name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit, created city class, added dataset from https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&amp;sort=name" />
+    <MESSAGE value="Progress on city class, added initialization mechanism" />
+    <MESSAGE value="Finished toString, first iteration of City class finished" />
+    <MESSAGE value="Implemented generic Loader interface, created CSVLoader class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented generic Loader interface, created CSVLoader class" />
   </component>
 </project>
