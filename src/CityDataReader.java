@@ -11,17 +11,17 @@ public class CityDataReader {
     private static final int popThreshold = 1000000;
     private CityDataReader() {}
 
-    public static ArrayList<City> readCitiesFromPath(String path) throws IOException {
+    public static List<City> readCitiesFromPath(String path) throws IOException {
         BufferedReader reader = DataFileReader.readPath(path);
 
         if (reader != null) {
             //En teoría, no debería lanzar excepción debido al centinela
-            ArrayList<City> cities = (ArrayList<City>) reader.lines()
+            List<City> cities = reader.lines()
                     .skip(1)
                     .map(line -> {
                         String[] fields = City.toCityFormat(line);
                         //System.out.println(fields[4]);
-                        return new City(fields);
+                        return City.makeCity(fields);
                     })
                     .filter(city -> city.getPopulation() >= popThreshold)
                     .collect(Collectors.toList());

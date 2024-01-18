@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -8,9 +7,14 @@ import java.util.stream.Collectors;
 public class Main {
     private static final String path = "./src/data/geonames-all-cities-with-a-population-1000.csv";
     public static void main(String[] args) throws IOException {
+        HashMap<String,City> citiesMap;
         List<City> citiesList = CityDataReader.readCitiesFromPath(path);
-        HashMap<String,City> citiesMap = (HashMap<String,City>) cityHasher(citiesList);
-        analyze(citiesMap);
+        if (citiesList != null) {
+            citiesMap = (HashMap<String,City>) cityHasher(citiesList);
+            analyze(citiesMap);
+        } else {
+            System.out.println("Error interpreting/reading data");
+        }
     }
 
     public static Map<String,City> cityHasher(List<City> cities) {

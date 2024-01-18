@@ -48,7 +48,7 @@ public class City {
     }
 
     //This class accepts a String[] that contains gID, name, country and population
-    public City(String[] data) {
+    private City(String[] data) {
         initialize(data);
     }
 
