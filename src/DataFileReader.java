@@ -4,9 +4,9 @@ public abstract class DataFileReader {
     private DataFileReader() {
     }
 
-    public static BufferedReader readPath(String path) throws FileNotFoundException {
+    public static BufferedReader readPath(String path) {
         try {
-            File file = Loader.loadPath(path);
+            File file = DataFileLoader.loadPath(path);
             if (file.exists()) {
                 return new BufferedReader(new FileReader(file));
             }

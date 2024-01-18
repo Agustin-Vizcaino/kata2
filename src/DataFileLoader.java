@@ -1,8 +1,8 @@
 import java.io.File;
 
-public abstract class Loader {
+public abstract class DataFileLoader {
 
-    private Loader() {}
+    private DataFileLoader() {}
 
     public static File loadPath(String path) {
         return new File(path);
