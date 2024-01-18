@@ -60,6 +60,6 @@ public class City {
 
     @Override
     public String toString() {
-        return "City{}";
+        return "Name: " + getName() + ", population: " + getPopulation();
     }
 }
