@@ -16,7 +16,7 @@ public class CityDataReader {
 
         if (reader != null) {
             //En teoría, no debería lanzar excepción debido al centinela
-            List<City> cities = reader.lines()
+            return reader.lines()
                     .skip(1)
                     .map(line -> {
                         String[] fields = City.toCityFormat(line);
@@ -26,7 +26,6 @@ public class CityDataReader {
                     .filter(city -> city.getPopulation() >= popThreshold)
                     .collect(Collectors.toList());
             //System.out.println(cities.size());
-            return cities;
         }
         return null;
     }
