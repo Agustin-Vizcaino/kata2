@@ -53,7 +53,7 @@ public class City {
     }
 
     protected int initialize(String[] data) {
-        if (data.length == 4) {
+        if (data.length == 5) {
             try {
                 gID = Integer.parseInt(data[0]);
                 name = data[1];
