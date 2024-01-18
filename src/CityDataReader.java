@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CityDataReader {
+
+    private static final int popThreshold = 1000000;
     private CityDataReader() {}
 
     public static ArrayList<City> readCitiesFromPath(String path) throws IOException {
@@ -20,6 +22,7 @@ public class CityDataReader {
                         String[] fields = City.toCityFormat(line);
                         return new City(fields);
                     })
+                    .filter(city -> city.getPopulation() >= popThreshold)
                     .collect(Collectors.toList());
         }
         return null;
