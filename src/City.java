@@ -4,9 +4,11 @@ public class City {
     //Dataset source: https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&sort=name
     private int gID;
     private String name;
+
+    private String countryCode;
+
     private String country;
     private int population;
-
 
     public int getgID() {
         return gID;
@@ -14,6 +16,12 @@ public class City {
 
     public String getName() {
         return name;
+    }
+
+    public String getFullName() { return name + "-" + countryCode ;}
+
+    public String getCountryCode() {
+        return countryCode;
     }
 
     public String getCountry() {
@@ -33,6 +41,7 @@ public class City {
     {
         gID = 0;
         name = "null";
+        countryCode = "null";
         country = "null";
         population = 0;
 
@@ -48,8 +57,9 @@ public class City {
             try {
                 gID = Integer.parseInt(data[0]);
                 name = data[1];
-                country = data[2];
-                population = Integer.parseInt(data[3]);
+                countryCode = data[2];
+                country = data[3];
+                population = Integer.parseInt(data[4]);
                 return 1;
             } catch (Exception e) {
                 return 0;
@@ -60,11 +70,11 @@ public class City {
 
     @Override
     public String toString() {
-        return "Name: " + getName() + ", population: " + getPopulation();
+        return "Name: " + getFullName() + ", population: " + getPopulation();
     }
 
     public static String[] toCityFormat(String line) {
         String[] fields = line.split(";");
-        return new String[] { fields[0], fields[1], fields[7], fields[13] };
+        return new String[] { fields[0], fields[1], fields[6], fields[7], fields[13] };
     }
 }

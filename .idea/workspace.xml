@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader">
-      <change afterPath="$PROJECT_DIR$/src/CityDataReader.java" afterDir="false" />
+    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="Added population threshold to CityDataReader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CSVLoader.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFileReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +116,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705596756186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Implemented CityDataReader">
+      <option name="closed" value="true" />
+      <created>1705600370366</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705600370366</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added population threshold to CityDataReader">
+      <option name="closed" value="true" />
+      <created>1705600601069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705600601069</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +164,8 @@
     <MESSAGE value="Finished toString, first iteration of City class finished" />
     <MESSAGE value="Implemented generic Loader interface, created CSVLoader class" />
     <MESSAGE value="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader" />
-    <option name="LAST_COMMIT_MESSAGE" value="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader" />
+    <MESSAGE value="Implemented CityDataReader" />
+    <MESSAGE value="Added population threshold to CityDataReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added population threshold to CityDataReader" />
   </component>
 </project>
