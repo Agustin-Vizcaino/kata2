@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="Finished toString, first iteration of City class finished">
-      <change afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+    <list default="true" id="fc45cf47-5d86-4e40-9b3b-cb47ff6c3662" name="Changes" comment="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader">
+      <change afterPath="$PROJECT_DIR$/src/CityReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataFileReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CSVLoader.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -35,7 +43,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +82,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705589615257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented generic Loader interface, created CSVLoader class">
+      <option name="closed" value="true" />
+      <created>1705595075500</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705595075500</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader">
+      <option name="closed" value="true" />
+      <created>1705596756186</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705596756186</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,7 +106,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="CSVLoader-deemed-irrelevant" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -89,6 +128,8 @@
     <MESSAGE value="Initial commit, created city class, added dataset from https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&amp;sort=name" />
     <MESSAGE value="Progress on city class, added initialization mechanism" />
     <MESSAGE value="Finished toString, first iteration of City class finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished toString, first iteration of City class finished" />
+    <MESSAGE value="Implemented generic Loader interface, created CSVLoader class" />
+    <MESSAGE value="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="CSVLoader functionality merged into Loader, about to rename CSVLoader to FileReader" />
   </component>
 </project>
