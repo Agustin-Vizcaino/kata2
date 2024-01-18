@@ -2,10 +2,10 @@ import java.util.List;
 
 public class City {
     //Dataset source: https://public.opendatasoft.com/explore/dataset/geonames-all-cities-with-a-population-1000/table/?disjunctive.cou_name_en&sort=name
-    protected int gID;
-    protected String name;
-    protected String country;
-    protected int population;
+    private int gID;
+    private String name;
+    private String country;
+    private int population;
 
 
     public int getgID() {
@@ -39,7 +39,7 @@ public class City {
     }
 
     //This class accepts a String[] that contains gID, name, country and population
-    private City(String[] data) {
+    public City(String[] data) {
         initialize(data);
     }
 
@@ -61,5 +61,10 @@ public class City {
     @Override
     public String toString() {
         return "Name: " + getName() + ", population: " + getPopulation();
+    }
+
+    public static String[] toCityFormat(String line) {
+        String[] fields = line.split(";");
+        return new String[] { fields[0], fields[1], fields[7], fields[13] };
     }
 }

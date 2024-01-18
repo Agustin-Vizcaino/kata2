@@ -12,7 +12,7 @@ public abstract class DataFileReader {
             }
             throw new IOException("File does not exist");
         } catch (IOException e) {
-            System.out.println(e.getCause());
+            System.out.println(e.getMessage());
             return null;
         }
     }
